@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { font-size: 15px; }
+  body {
+    @apply font-sans bg-slate-100 text-slate-800 overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  html.dark body {
+    @apply bg-[#0f1117] text-slate-200;
+  }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgba(30,58,138,0.25); border-radius: 8px; }
+.dark ::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.35); }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); }
+
+/* ── Sidebar submenu accordion ── */
+.submenu-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(.4,0,.2,1);
+}
+.submenu-wrap.open { grid-template-rows: 1fr; }
+.submenu-inner { overflow: hidden; }
+
+/* ── Mobile drawer ── */
+.drawer-panel {
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+.drawer-panel.open { transform: translateX(0); }
+
+/* ── Page animation ── */
+.page-animate { animation: fadeSlideIn 0.28s ease; }
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 3D Card effect ── */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-3d:hover {
+  transform: translateY(-3px) rotateX(1deg);
+}
+
+/* ── Light theme 3D card ── */
+.light .card-3d, html:not(.dark) .card-3d {
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.9);
+}
+.light .card-3d:hover, html:not(.dark) .card-3d:hover {
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08), 0 12px 28px rgba(30,58,138,0.12), inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* ── Dark theme 3D card ── */
+html.dark .card-3d {
+  box-shadow: 0 2px 0 rgba(0,0,0,0.5), 0 6px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+html.dark .card-3d:hover {
+  box-shadow: 0 8px 0 rgba(0,0,0,0.6), 0 16px 40px rgba(99,102,241,0.18), inset 0 1px 0 rgba(255,255,255,0.07);
+}
+
+/* ── Dark theme variables ── */
+html.dark {
+  --bg-primary: #0f1117;
+  --bg-card: #1a1d2e;
+  --bg-card-hover: #1e2238;
+  --border-color: rgba(99,102,241,0.12);
+  --text-muted: rgba(148,163,184,1);
+}
+
+/* ── Sidebar glass effect dark ── */
+html.dark .sidebar-dark {
+  background: linear-gradient(180deg, #1a1f35 0%, #141828 100%);
+  border-right: 1px solid rgba(99,102,241,0.12);
+}
+
+/* ── Theme toggle button ── */
+.theme-toggle {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+  flex-shrink: 0;
+}
+.theme-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-toggle-light {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  left: 3px;
+  transform: translateX(0);
+  box-shadow: 0 1px 4px rgba(251,191,36,0.5);
+}
+.theme-toggle-dark {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  left: 3px;
+  transform: translateX(24px);
+  box-shadow: 0 1px 8px rgba(99,102,241,0.6);
+}
+
+/* ── Glow on stat cards dark ── */
+html.dark .stat-card-blue  { box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 4px 20px rgba(59,130,246,0.15); }
+html.dark .stat-card-green { box-shadow: 0 0 0 1px rgba(16,185,129,0.2), 0 4px 20px rgba(16,185,129,0.15); }
+html.dark .stat-card-orange{ box-shadow: 0 0 0 1px rgba(245,158,11,0.2), 0 4px 20px rgba(245,158,11,0.15); }
+html.dark .stat-card-purple{ box-shadow: 0 0 0 1px rgba(139,92,246,0.2), 0 4px 20px rgba(139,92,246,0.15); }
+
+/* ── Menubar active tab dark ── */
+html.dark .menu-active-tab {
+  background: linear-gradient(135deg, #4f46e5, #1e3a8a);
+  box-shadow: 0 2px 12px rgba(79,70,229,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* ── Input dark focus glow ── */
+html.dark input:focus, html.dark select:focus, html.dark textarea:focus {
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.25);
+}
+
+/* ── Button 3d press ── */
+.btn-3d {
+  transform: translateY(0);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.btn-3d:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.2), 0 4px 16px rgba(0,0,0,0.15);
+}
+.btn-3d:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+/* ── Topbar shimmer line ── */
+.topbar-shimmer::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.6), rgba(59,130,246,0.8), rgba(139,92,246,0.6), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* ── Dashboard welcome card shimmer (dark) ── */
+html.dark .welcome-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #1e3a8a 100%);
+  box-shadow: 0 8px 32px rgba(30,58,138,0.4), inset 0 1px 0 rgba(255,255,255,0.08);
+}
