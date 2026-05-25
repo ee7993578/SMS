@@ -180,6 +180,7 @@ export const MENU_DATA = [
           { id: 'studentRegistration', label: 'Student Registration' },
           { id: 'AdmNoAllotment', label: 'Registration No' },
           { id: 'newClassAllotment', label: 'Allotment Section' },
+          { id: 'StudentICard', label: 'Student ICard' },
         ],
       },
       {

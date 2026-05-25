@@ -8,7 +8,7 @@ import GenericPage from './GenericPage'
 import StudentRegistration from './Student/Work/StudentRegistration'
 import AdmNoAllotment from './Student/Work/AdmNoAllotment'
 import NewClassAllotment from './Student/Work/newClassAllotment'
-
+import StudentICard from './Student/Work/StudentICard'
 /**
  * Maps specific page IDs to dedicated components.
  * Everything else falls through to GenericPage.
@@ -33,6 +33,8 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
   if (pageId === 'studentRegistration') return <StudentRegistration />
   if (pageId === 'AdmNoAllotment') return <AdmNoAllotment />
   if (pageId === 'newClassAllotment') return <NewClassAllotment />
+   if (pageId === 'StudentICard') return <StudentICard />
+  StudentICard
   return (
     <GenericPage
       key={pageId}             // re-mount on page change
