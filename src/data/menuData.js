@@ -207,6 +207,7 @@ export const MENU_DATA = [
           { id: 'StudentTypeReport',    label: 'Student Type Report' },
           { id: 'BirthdayReport',    label: 'Birthday Report' },
           { id: 'SiblingReport',    label: 'Sibling Report' },
+          { id: 'StudentInfoSheet',    label: 'Student Info Sheet' },
         ],
       },
       {
