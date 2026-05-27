@@ -9,6 +9,22 @@ import StudentRegistration from './Student/Work/StudentRegistration'
 import AdmNoAllotment from './Student/Work/AdmNoAllotment'
 import NewClassAllotment from './Student/Work/newClassAllotment'
 import StudentICard from './Student/Work/StudentICard'
+import AdmitCard from './Student/Work/AdmitCard'
+import SearchStudent from './Student/Work/SearchStudent'
+import UpdateStudentInfo from './Student/Update/UpdateStudentInfo'
+import ChangeAdmNo from './Student/Update/ChangeAdmNo'
+import UploadStudentImage from './Student/Update/UploadStudentImage'
+import StudentWithdrawn from './Student/Update/StudentWithdrawn'
+import UpdateStudentInfosheet from './Student/Update/UpdateStudentInfosheet'
+import PromoteDemote from './Student/Update/PromoteDemote'
+import StudentIDPassword from './Student/Reports/StudentIDPassword'
+import StrengthReport from './Student/Reports/StrengthReport'
+import ClasswiseStrengthReport from './Student/Reports/ClasswiseStrengthReport'
+import AllStudentStrength from './Student/Reports/AllStudentStrength'
+import HouseReport from './Student/Reports/HouseReport'
+import StudentTypeReport from './Student/Reports/StudentTypeReport'
+import BirthdayReport from './Student/Reports/BirthdayReport'
+import SiblingReport from './Student/Reports/SiblingReport'
 /**
  * Maps specific page IDs to dedicated components.
  * Everything else falls through to GenericPage.
@@ -34,7 +50,23 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
   if (pageId === 'AdmNoAllotment') return <AdmNoAllotment />
   if (pageId === 'newClassAllotment') return <NewClassAllotment />
    if (pageId === 'StudentICard') return <StudentICard />
-  StudentICard
+   if (pageId === 'AdmitCard') return <AdmitCard />
+   if (pageId === 'SearchStudent') return <SearchStudent />
+   if (pageId === 'UpdateStudentInfo') return <UpdateStudentInfo />
+   if (pageId === 'ChangeAdmNo') return <ChangeAdmNo />
+   if (pageId === 'UploadStudentImage') return <UploadStudentImage />
+   if (pageId === 'StudentWithdrawn') return <StudentWithdrawn />
+   if (pageId === 'UpdateStudentInfosheet') return <UpdateStudentInfosheet />
+   if (pageId === 'PromoteDemote') return <PromoteDemote />
+   if (pageId === 'StudentIDPassword') return <StudentIDPassword />
+   if (pageId === 'StrengthReport') return <StrengthReport />
+   if (pageId === 'ClasswiseStrengthReport') return <ClasswiseStrengthReport />
+   if (pageId === 'AllStudentStrength') return <AllStudentStrength />
+   if (pageId === 'HouseReport') return <HouseReport />
+   if (pageId === 'StudentTypeReport') return <StudentTypeReport />
+   if (pageId === 'BirthdayReport') return <BirthdayReport />
+   if (pageId === 'SiblingReport') return <SiblingReport />
+  
   return (
     <GenericPage
       key={pageId}             // re-mount on page change
