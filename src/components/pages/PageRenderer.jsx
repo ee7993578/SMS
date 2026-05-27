@@ -25,6 +25,10 @@ import HouseReport from './Student/Reports/HouseReport'
 import StudentTypeReport from './Student/Reports/StudentTypeReport'
 import BirthdayReport from './Student/Reports/BirthdayReport'
 import SiblingReport from './Student/Reports/SiblingReport'
+import StudentInfoSheet from './Student/Reports/StudentInfoSheet'
+
+
+
 /**
  * Maps specific page IDs to dedicated components.
  * Everything else falls through to GenericPage.
@@ -66,6 +70,7 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'StudentTypeReport') return <StudentTypeReport />
    if (pageId === 'BirthdayReport') return <BirthdayReport />
    if (pageId === 'SiblingReport') return <SiblingReport />
+   if (pageId === 'StudentInfoSheet') return <StudentInfoSheet />
   
   return (
     <GenericPage
