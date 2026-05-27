@@ -11,6 +11,8 @@ import NewClassAllotment from './Student/Work/newClassAllotment'
 import StudentICard from './Student/Work/StudentICard'
 import AdmitCard from './Student/Work/AdmitCard'
 import SearchStudent from './Student/Work/SearchStudent'
+import RegistrationRedirection from './Student/Work/RegistrationRedirection'
+import BulkAdmissionOnlineRegistration from './Student/Work/BulkAdmissionOnlineRegistration'
 import UpdateStudentInfo from './Student/Update/UpdateStudentInfo'
 import ChangeAdmNo from './Student/Update/ChangeAdmNo'
 import UploadStudentImage from './Student/Update/UploadStudentImage'
@@ -71,6 +73,8 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'BirthdayReport') return <BirthdayReport />
    if (pageId === 'SiblingReport') return <SiblingReport />
    if (pageId === 'StudentInfoSheet') return <StudentInfoSheet />
+   if (pageId === 'RegistrationRedirection') return <RegistrationRedirection />
+   if (pageId === 'BulkAdmissionOnlineRegistration') return <BulkAdmissionOnlineRegistration />
   
   return (
     <GenericPage

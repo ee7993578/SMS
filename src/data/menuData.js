@@ -208,6 +208,8 @@ export const MENU_DATA = [
           { id: 'BirthdayReport',    label: 'Birthday Report' },
           { id: 'SiblingReport',    label: 'Sibling Report' },
           { id: 'StudentInfoSheet',    label: 'Student Info Sheet' },
+          { id: 'RegistrationRedirection',    label: 'Online Registration Form' },
+          { id: 'BulkAdmissionOnlineRegistration',    label: 'Online Confirm Admission' },
         ],
       },
       {
