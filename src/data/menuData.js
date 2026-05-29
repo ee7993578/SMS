@@ -212,6 +212,8 @@ export const MENU_DATA = [
           { id: 'StudentInfoSheet',    label: 'Student Info Sheet' },
           { id: 'StudentList',    label: 'Student List' },
           { id: 'OnlineRegistrationReportStatus',    label: 'Online Registration Report Status' },
+          { id: 'OnlineRegistrationReport',    label: 'Online Registration Report' },
+          { id: 'UDISEPromotionReport',    label: 'UDISE Promotion Report' },
 
         ],
       },

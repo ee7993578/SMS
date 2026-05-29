@@ -30,6 +30,8 @@ import SiblingReport from './Student/Reports/SiblingReport'
 import StudentInfoSheet from './Student/Reports/StudentInfoSheet'
 import StudentList from './Student/Reports/StudentList'
 import OnlineRegistrationReportStatus from './Student/Reports/OnlineRegistrationReportStatus'
+import OnlineRegistrationReport from './Student/Reports/OnlineRegistrationReport'
+import UDISEPromotionReport from './Student/Reports/UDISEPromotionReport'
 
 
 
@@ -79,6 +81,8 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'BulkAdmissionOnlineRegistration') return <BulkAdmissionOnlineRegistration />
    if (pageId === 'StudentList') return <StudentList />
    if (pageId === 'OnlineRegistrationReportStatus') return <OnlineRegistrationReportStatus />
+   if (pageId === 'OnlineRegistrationReport') return <OnlineRegistrationReport />
+   if (pageId === 'UDISEPromotionReport') return <UDISEPromotionReport />
 
   return (
     <GenericPage
