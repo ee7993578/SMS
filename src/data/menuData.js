@@ -216,6 +216,7 @@ export const MENU_DATA = [
           { id: 'UDISEPromotionReport',    label: 'UDISE Promotion Report' },
           { id: 'AdmittedStudentReport',    label: 'Admitted Student Report' },
           { id: 'EntranceExamAdmitCard',    label: 'Entrance Exam Admit Card' },
+          { id: 'RegistrationReport',    label: 'Registration Report' },
 
         ],
       },
