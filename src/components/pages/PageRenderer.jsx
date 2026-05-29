@@ -28,6 +28,8 @@ import StudentTypeReport from './Student/Reports/StudentTypeReport'
 import BirthdayReport from './Student/Reports/BirthdayReport'
 import SiblingReport from './Student/Reports/SiblingReport'
 import StudentInfoSheet from './Student/Reports/StudentInfoSheet'
+import StudentList from './Student/Reports/StudentList'
+import OnlineRegistrationReportStatus from './Student/Reports/OnlineRegistrationReportStatus'
 
 
 
@@ -75,7 +77,9 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'StudentInfoSheet') return <StudentInfoSheet />
    if (pageId === 'RegistrationRedirection') return <RegistrationRedirection />
    if (pageId === 'BulkAdmissionOnlineRegistration') return <BulkAdmissionOnlineRegistration />
-  
+   if (pageId === 'StudentList') return <StudentList />
+   if (pageId === 'OnlineRegistrationReportStatus') return <OnlineRegistrationReportStatus />
+
   return (
     <GenericPage
       key={pageId}             // re-mount on page change
