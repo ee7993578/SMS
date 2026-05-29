@@ -35,6 +35,7 @@ import UDISEPromotionReport from './Student/Reports/UDISEPromotionReport'
 import AdmittedStudentReport from './Student/Reports/AdmittedStudentReport'
 import EntranceExamAdmitCard from './Student/Reports/EntranceExamAdmitCard'
 import RegistrationReport from './Student/Reports/RegistrationReport'
+import StudentWithdrawnReport from './Student/Reports/StudentWithdrawnReport'
 
 
 
@@ -89,6 +90,7 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'AdmittedStudentReport') return <AdmittedStudentReport />
    if (pageId === 'EntranceExamAdmitCard') return <EntranceExamAdmitCard />
    if (pageId === 'RegistrationReport') return <RegistrationReport />
+   if (pageId === 'StudentWithdrawnReport') return <StudentWithdrawnReport />
 
 
   return (

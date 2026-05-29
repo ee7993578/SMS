@@ -217,6 +217,7 @@ export const MENU_DATA = [
           { id: 'AdmittedStudentReport',    label: 'Admitted Student Report' },
           { id: 'EntranceExamAdmitCard',    label: 'Entrance Exam Admit Card' },
           { id: 'RegistrationReport',    label: 'Registration Report' },
+          { id: 'StudentWithdrawnReport',    label: 'Student Withdrawn Report' },
 
         ],
       },
