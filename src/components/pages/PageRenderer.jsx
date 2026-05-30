@@ -47,6 +47,15 @@ import RegistrationOpen from './Student/Setup/RegistrationOpen'
 import ExamConfiguration from './Student/Setup/ExamConfiguration'
 
 
+//staff work start from here
+import FacultyRegistration from './Staff/Work/FacultyRegistration'
+import FacultyReregistration from './Staff/Work/FacultyReregistration'
+
+
+
+
+// staff work end here
+
 
 /**
  * Maps specific page IDs to dedicated components.
@@ -109,6 +118,15 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'ClassRepresentative') return <ClassRepresentative /> 
    if (pageId === 'RegistrationOpen') return <RegistrationOpen /> 
    if (pageId === 'ExamConfiguration') return <ExamConfiguration /> 
+
+
+  //staff work start from here
+    if (pageId === 'FacultyRegistration') return <FacultyRegistration />    
+    if (pageId === 'FacultyReregistration') return <FacultyReregistration />  
+  //staff work end here
+
+
+
   return (
     <GenericPage
       key={pageId}             // re-mount on page change

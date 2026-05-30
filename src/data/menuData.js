@@ -239,27 +239,32 @@ export const MENU_DATA = [
       },
     ],
   },
-  {
-    id: 'uploads', label: 'Uploads',
+ {
+    id: 'staff', label: 'Staff',
     groups: [
       {
-        id: 'data-upload', label: 'Data Upload', icon: 'Upload',
+        id: 'staff_work', label: 'Work', icon: 'FilePlus',
         pages: [
-          { id: 'upload-students',   label: 'Upload Students' },
-          { id: 'upload-marks',      label: 'Upload Marks' },
-          { id: 'upload-attendance', label: 'Upload Attendance' },
-          { id: 'upload-fee',        label: 'Upload Fee Data' },
-          { id: 'upload-staff',      label: 'Upload Staff Data' },
+          { id: 'FacultyRegistration', label: 'Faculty Registration' },
+          { id: 'FacultyReregistration', label: 'Faculty Reregistration' },   
         ],
       },
       {
-        id: 'bulk-ops', label: 'Bulk Operations', icon: 'Archive',
+        id: 'staff_update', label: 'Updates', icon: 'CheckSquare',
         pages: [
-          { id: 'bulk-photo',     label: 'Bulk Photo Upload' },
-          { id: 'bulk-docs',      label: 'Bulk Document Upload' },
-          { id: 'template-dl',    label: 'Template Download' },
-          { id: 'upload-history', label: 'Upload History' },
-          { id: 'error-logs',     label: 'Error Logs' },
+          { id: 'UpdatestaffdentInfo',    label: 'Update staffdent Info' },
+        ],
+      },
+      {
+        id: 'staff_report', label: 'Reports', icon: 'FilePlus',
+        pages: [
+          { id: 'staffdentIDPassword',    label: 'staffdent ID Password' },
+        ],
+      },
+      {
+        id: 'staff_setup', label: 'Setup', icon: 'CheckSquare',
+        pages: [
+          { id: 'AlumniRegistration',    label: 'Alumni Registration ' },
         ],
       },
     ],
