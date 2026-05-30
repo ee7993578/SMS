@@ -40,6 +40,11 @@ import DownloadRegistrationForm from './Student/Reports/DownloadRegistrationForm
 import NewStudentReport from './Student/Reports/NewStudentReport'
 import StudentRegistrationDetails from './Student/Reports/StudentRegistrationDetails'
 import StudentRecord from './Student/Reports/StudentRecord'
+import AlumniRegistration from './Student/Setup/AlumniRegistration'
+import HouseMaster from './Student/Setup/HouseMaster'
+import ClassRepresentative from './Student/Setup/ClassRepresentative'
+import RegistrationOpen from './Student/Setup/RegistrationOpen'
+import ExamConfiguration from './Student/Setup/ExamConfiguration'
 
 
 
@@ -99,8 +104,11 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'NewStudentReport') return <NewStudentReport />
    if (pageId === 'StudentRegistrationDetails') return <StudentRegistrationDetails />
    if (pageId === 'StudentRecord') return <StudentRecord />
-
-
+   if (pageId === 'AlumniRegistration') return <AlumniRegistration />
+   if (pageId === 'HouseMaster') return <HouseMaster /> 
+   if (pageId === 'ClassRepresentative') return <ClassRepresentative /> 
+   if (pageId === 'RegistrationOpen') return <RegistrationOpen /> 
+   if (pageId === 'ExamConfiguration') return <ExamConfiguration /> 
   return (
     <GenericPage
       key={pageId}             // re-mount on page change

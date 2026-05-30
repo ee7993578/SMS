@@ -222,13 +222,19 @@ export const MENU_DATA = [
           { id: 'NewStudentReport',    label: 'New Student Report' },
           { id: 'StudentRegistrationDetails',    label: 'Registration Fee Report' },
           { id: 'StudentRecord',    label: 'Student Record' },
+          { id: 'AlumniRegistration',    label: 'Alumni Registration' },
+          { id: 'ClassRepresentative',    label: 'Class Representative' },
 
         ],
       },
       {
         id: 'stu_setup', label: 'Setup', icon: 'CheckSquare',
         pages: [
-          { id: 'class-assign',    label: 'Promote ' },
+          { id: 'AlumniRegistration',    label: 'Alumni Registration ' },
+          { id: 'HouseMaster',    label: 'House Master ' },
+          { id: 'ClassRepresentative',    label: 'Class Representative ' },
+          { id: 'RegistrationOpen',    label: 'Registration Open ' },
+          { id: 'ExamConfiguration',    label: 'Exam Configuration ' },
         ],
       },
     ],
