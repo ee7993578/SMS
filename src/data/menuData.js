@@ -252,19 +252,25 @@ export const MENU_DATA = [
       {
         id: 'staff_update', label: 'Updates', icon: 'CheckSquare',
         pages: [
-          { id: 'UpdatestaffdentInfo',    label: 'Update staffdent Info' },
+          { id: 'FacultyInfosheet',    label: 'Update Faculty Info' },
         ],
       },
       {
         id: 'staff_report', label: 'Reports', icon: 'FilePlus',
         pages: [
-          { id: 'staffdentIDPassword',    label: 'staffdent ID Password' },
+          { id: 'FacultyInfoDownload',    label: 'Faculty Info Download' },
+          { id: 'FacultyIdPassword',    label: 'Faculty ID Password' },
+          { id: 'JobApplicationReport',    label: 'Job Application Report' },
+          { id: 'ClassTeacherReport',    label: 'Class Teacher Report' },
+
+          
         ],
       },
       {
         id: 'staff_setup', label: 'Setup', icon: 'CheckSquare',
         pages: [
-          { id: 'AlumniRegistration',    label: 'Alumni Registration ' },
+          { id: 'DefineClassTeacher',    label: 'Define Class Teacher ' },
+          { id: 'RegistrationOpenConfig',    label: 'Registration Open Config ' },
         ],
       },
     ],

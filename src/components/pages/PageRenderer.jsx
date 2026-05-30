@@ -51,6 +51,16 @@ import ExamConfiguration from './Student/Setup/ExamConfiguration'
 import FacultyRegistration from './Staff/Work/FacultyRegistration'
 import FacultyReregistration from './Staff/Work/FacultyReregistration'
 
+import FacultyInfosheet from './Staff/Update/FacultyInfosheet'
+
+import ClassTeacherReport from './Staff/Report/ClassTeacherReport'
+import FacultyInfoDownload from './Staff/Report/FacultyInfoDownload'
+import JobApplicationReport from './Staff/Report/JobApplicationReport'
+import FacultyIdPassword from './Staff/Report/FacultyIdPassword'
+
+import DefineClassTeacher from './Staff/Setup/DefineClassTeacher'
+import RegistrationOpenConfig from './Staff/Setup/RegistrationOpenConfig'
+
 
 
 
@@ -123,6 +133,16 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
   //staff work start from here
     if (pageId === 'FacultyRegistration') return <FacultyRegistration />    
     if (pageId === 'FacultyReregistration') return <FacultyReregistration />  
+
+    if (pageId === 'FacultyInfosheet') return <FacultyInfosheet />  
+
+    if (pageId === 'FacultyInfoDownload') return <FacultyInfoDownload />
+    if (pageId === 'FacultyIdPassword') return <FacultyIdPassword />  
+    if (pageId === 'JobApplicationReport') return <JobApplicationReport />  
+    if (pageId === 'ClassTeacherReport') return <ClassTeacherReport /> 
+    
+    if (pageId === 'DefineClassTeacher') return <DefineClassTeacher />
+    if (pageId === 'RegistrationOpenConfig') return <RegistrationOpenConfig />
   //staff work end here
 
 
