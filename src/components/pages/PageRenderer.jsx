@@ -36,6 +36,10 @@ import AdmittedStudentReport from './Student/Reports/AdmittedStudentReport'
 import EntranceExamAdmitCard from './Student/Reports/EntranceExamAdmitCard'
 import RegistrationReport from './Student/Reports/RegistrationReport'
 import StudentWithdrawnReport from './Student/Reports/StudentWithdrawnReport'
+import DownloadRegistrationForm from './Student/Reports/DownloadRegistrationForm'
+import NewStudentReport from './Student/Reports/NewStudentReport'
+import StudentRegistrationDetails from './Student/Reports/StudentRegistrationDetails'
+import StudentRecord from './Student/Reports/StudentRecord'
 
 
 
@@ -91,6 +95,10 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
    if (pageId === 'EntranceExamAdmitCard') return <EntranceExamAdmitCard />
    if (pageId === 'RegistrationReport') return <RegistrationReport />
    if (pageId === 'StudentWithdrawnReport') return <StudentWithdrawnReport />
+   if (pageId === 'DownloadRegistrationForm') return <DownloadRegistrationForm />
+   if (pageId === 'NewStudentReport') return <NewStudentReport />
+   if (pageId === 'StudentRegistrationDetails') return <StudentRegistrationDetails />
+   if (pageId === 'StudentRecord') return <StudentRecord />
 
 
   return (

@@ -218,6 +218,10 @@ export const MENU_DATA = [
           { id: 'EntranceExamAdmitCard',    label: 'Entrance Exam Admit Card' },
           { id: 'RegistrationReport',    label: 'Registration Report' },
           { id: 'StudentWithdrawnReport',    label: 'Student Withdrawn Report' },
+          { id: 'DownloadRegistrationForm',    label: 'Download Registration Form' },
+          { id: 'NewStudentReport',    label: 'New Student Report' },
+          { id: 'StudentRegistrationDetails',    label: 'Registration Fee Report' },
+          { id: 'StudentRecord',    label: 'Student Record' },
 
         ],
       },
