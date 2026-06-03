@@ -66,14 +66,14 @@ import RegistrationOpenConfig from './Staff/Setup/RegistrationOpenConfig'
 
 // Fees work start here
 import DepositFee from './Fee/Work/DepositFee'
-import DepositFee from './Fee/Work/DepositLateFees'
-import DepositFee from './Fee/Work/FeeSettlement'
-import DepositFee from './Fee/Work/ImportExcelFee'
-import DepositFee from './Fee/Work/LateFeeReport'
-import DepositFee from './Fee/Work/MiscellaneousFee'
-import DepositFee from './Fee/Work/RefundableFees'
-import DepositFee from './Fee/Work/WaveOffFees'
-import DepositFee from './Fee/Work/WaveOffLateFees'
+import DepositLateFees from './Fee/Work/DepositLateFees'
+import FeeSettlement from './Fee/Work/FeeSettlement'
+import ImportExcelFee from './Fee/Work/ImportExcelFee'
+import LateFeeReport from './Fee/Work/LateFeeReport'
+import MiscellaneousFee from './Fee/Work/MiscellaneousFee'
+import RefundableFees from './Fee/Work/RefundableFees'
+import WaveOffFees from './Fee/Work/WaveOffFees'
+import WaveOffLateFees from './Fee/Work/WaveOffLateFees'
 
 
 import AssignConGroup from './Fee/Update/AssignConGroup'
