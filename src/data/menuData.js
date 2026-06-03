@@ -77,41 +77,7 @@ export const MENU_DATA = [
       },
     ],
   },
-  {
-    id: 'fee', label: 'Fee',
-    groups: [
-      {
-        id: 'fee-structure', label: 'Fee Structure', icon: 'Layout',
-        pages: [
-          { id: 'fee-heads',   label: 'Define Fee Heads' },
-          { id: 'fee-setup',   label: 'Fee Structure Setup' },
-          { id: 'concession',  label: 'Concession & Scholarships' },
-          { id: 'late-fee',    label: 'Late Fee Configuration' },
-          { id: 'installment', label: 'Fee Installment Plan' },
-        ],
-      },
-      {
-        id: 'fee-collection', label: 'Fee Collection', icon: 'CreditCard',
-        pages: [
-          { id: 'collect-fee',     label: 'Collect Fee' },
-          { id: 'online-payment',  label: 'Online Payment' },
-          { id: 'fee-receipt',     label: 'Fee Receipt' },
-          { id: 'bulk-collection', label: 'Bulk Fee Collection' },
-          { id: 'pending-fees',    label: 'Pending Fees' },
-        ],
-      },
-      {
-        id: 'fee-reports', label: 'Fee Reports', icon: 'TrendingUp',
-        pages: [
-          { id: 'daily-collection',  label: 'Daily Collection Report' },
-          { id: 'classwise-fee',     label: 'Class-wise Fee Report' },
-          { id: 'defaulters',        label: 'Defaulters List' },
-          { id: 'fee-summary',       label: 'Fee Summary' },
-          { id: 'annual-fee-report', label: 'Annual Fee Report' },
-        ],
-      },
-    ],
-  },
+  
   {
     id: 'transport', label: 'Transport',
     groups: [
@@ -271,6 +237,36 @@ export const MENU_DATA = [
         pages: [
           { id: 'DefineClassTeacher',    label: 'Define Class Teacher ' },
           { id: 'RegistrationOpenConfig',    label: 'Registration Open Config ' },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fee', label: 'Fee',
+    groups: [
+      {
+        id: 'fee_work', label: 'Work', icon: 'FilePlus',
+        pages: [
+          { id: 'DepositFee', label: 'Deposit Fee' },
+         
+        ],
+      },
+      {
+        id: 'fee_update', label: 'Updates', icon: 'CheckSquare',
+        pages: [
+   
+        ],
+      },
+      {
+        id: 'fee_report', label: 'Reports', icon: 'FilePlus',
+        pages: [
+        
+        ],
+      },
+      {
+        id: 'fee_setup', label: 'Setup', icon: 'CheckSquare',
+        pages: [
         ],
       },
     ],

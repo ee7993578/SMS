@@ -64,7 +64,8 @@ import RegistrationOpenConfig from './Staff/Setup/RegistrationOpenConfig'
 
 
 
-// staff work end here
+// Fees work start here
+import DepositFee from './Fee/Work/DepositFee'
 
 
 /**
@@ -143,8 +144,9 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
     
     if (pageId === 'DefineClassTeacher') return <DefineClassTeacher />
     if (pageId === 'RegistrationOpenConfig') return <RegistrationOpenConfig />
-  //staff work end here
 
+  //Fee work start here
+    if (pageId === 'DepositFee') return <DepositFee />
 
 
   return (
