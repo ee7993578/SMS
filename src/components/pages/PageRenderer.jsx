@@ -66,6 +66,28 @@ import RegistrationOpenConfig from './Staff/Setup/RegistrationOpenConfig'
 
 // Fees work start here
 import DepositFee from './Fee/Work/DepositFee'
+import DepositFee from './Fee/Work/DepositLateFees'
+import DepositFee from './Fee/Work/FeeSettlement'
+import DepositFee from './Fee/Work/ImportExcelFee'
+import DepositFee from './Fee/Work/LateFeeReport'
+import DepositFee from './Fee/Work/MiscellaneousFee'
+import DepositFee from './Fee/Work/RefundableFees'
+import DepositFee from './Fee/Work/WaveOffFees'
+import DepositFee from './Fee/Work/WaveOffLateFees'
+
+
+import AssignConGroup from './Fee/Update/AssignConGroup'
+import AssignOptional from './Fee/Update/AssignOptional'
+import FeeNotice from './Fee/Update/FeeNotice'
+import ReconFee from './Fee/Update/ReconFee'
+import ReprintFeeSlip from './Fee/Update/ReprintFeeSlip'
+import UpdateStudentFee from './Fee/Update/UpdateStudentFee'
+
+
+import FeeHeadMaster from './Fee/Setup/FeeHeadMaster'
+import FeeHeadChargeMaster from './Fee/Setup/FeeHeadChargeMaster'
+import DefineInstallment from './Fee/Setup/DefineInstallment'
+
 
 
 /**
@@ -147,7 +169,26 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
 
   //Fee work start here
     if (pageId === 'DepositFee') return <DepositFee />
+    if (pageId === 'DepositLateFees') return <DepositLateFees />
+    if (pageId === 'FeeSettlement') return <FeeSettlement />
+    if (pageId === 'ImportExcelFee') return <ImportExcelFee />
+    if (pageId === 'LateFeeReport') return <LateFeeReport />
+    if (pageId === 'MiscellaneousFee') return <MiscellaneousFee />
+    if (pageId === 'RefundableFees') return <RefundableFees />
+    if (pageId === 'WaveOffFees') return <WaveOffFees />
+    if (pageId === 'WaveOffLateFees') return <WaveOffLateFees />
 
+    if (pageId === 'AssignConGroup') return <AssignConGroup />
+    if (pageId === 'AssignOptional') return <AssignOptional />
+    if (pageId === 'FeeNotice') return <FeeNotice />
+    if (pageId === 'ReconFee') return <ReconFee />
+    if (pageId === 'ReprintFeeSlip') return <ReprintFeeSlip />
+    if (pageId === 'UpdateStudentFee') return <UpdateStudentFee />
+
+
+      if (pageId === 'FeeHeadMaster') return <FeeHeadMaster />
+      if (pageId === 'FeeHeadChargeMaster') return <FeeHeadChargeMaster />
+      if (pageId === 'DefineInstallment') return <DefineInstallment />
 
   return (
     <GenericPage

@@ -249,13 +249,26 @@ export const MENU_DATA = [
         id: 'fee_work', label: 'Work', icon: 'FilePlus',
         pages: [
           { id: 'DepositFee', label: 'Deposit Fee' },
+          { id: 'DepositLateFeesFee', label: 'Deposit LateFees' },
+          { id: 'FeeSettlement', label: 'Fee Settlement' },
+          { id: 'ImportExcelFee', label: 'Import Excel Fee' },
+          { id: 'LateFeeReport', label: 'Late Fee Report' },
+          { id: 'MiscellaneousFee', label: 'Miscellaneous Fee' },
+          { id: 'RefundableFees', label: 'Refundable Fees' },
+          { id: 'WaveOffFees', label: 'Wave Off Fees' },
+          { id: 'WaveOffLateFees', label: 'Wave Off Late Fees' },
          
         ],
       },
       {
         id: 'fee_update', label: 'Updates', icon: 'CheckSquare',
         pages: [
-   
+           { id: 'AssignConGroup', label: 'Assign Concession Group' },
+           { id: 'AssignOptional', label: 'Assign Optional Subjects' },
+           { id: 'FeeNotice', label: 'Generate Fee Notice' },
+           { id: 'ReconFee', label: 'Reconcile Fees' },
+           { id: 'ReprintFeeSlip', label: 'Reprint Fee Slip' },
+           { id: 'UpdateStudentFee', label: 'Update Student Fee' },
         ],
       },
       {
@@ -267,6 +280,9 @@ export const MENU_DATA = [
       {
         id: 'fee_setup', label: 'Setup', icon: 'CheckSquare',
         pages: [
+            { id: 'FeeHeadMaster', label: 'Fee Head Master' },
+            { id: 'FeeHeadChargeMaster', label: 'Fee Head Charge Master' },
+            { id: 'DefineInstallment', label: 'Define Installment' },
         ],
       },
     ],
