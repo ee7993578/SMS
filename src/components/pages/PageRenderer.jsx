@@ -69,7 +69,7 @@ import DepositFee from './Fee/Work/DepositFee'
 import DepositLateFees from './Fee/Work/DepositLateFees'
 import FeeSettlement from './Fee/Work/FeeSettlement'
 import ImportExcelFee from './Fee/Work/ImportExcelFee'
-import LateFeeReport from './Fee/Work/LateFeeReport'
+import LateFeeReportWork from './Fee/Work/LateFeeReportWork'
 import MiscellaneousFee from './Fee/Work/MiscellaneousFee'
 import RefundableFees from './Fee/Work/RefundableFees'
 import WaveOffFees from './Fee/Work/WaveOffFees'
@@ -87,6 +87,29 @@ import UpdateStudentFee from './Fee/Update/UpdateStudentFee'
 import FeeHeadMaster from './Fee/Setup/FeeHeadMaster'
 import FeeHeadChargeMaster from './Fee/Setup/FeeHeadChargeMaster'
 import DefineInstallment from './Fee/Setup/DefineInstallment'
+import DefineLateFee from './Fee/Setup/DefineLateFee'
+import DefineConcessionGroup from './Fee/Setup/DefineConcessionGroup'
+import DefineConcession from './Fee/Setup/DefineConcession'
+import DefineConcessionValue from './Fee/Setup/DefineConcessionValue'
+
+
+
+
+import BudgetReport from './Fee/Report/BudgetReport'
+import ClasswiseFeeReport from './Fee/Report/ClasswiseFeeReport'
+import ConcessionGroupReport from './Fee/Report/ConcessionGroupReport'
+import ConcessionReport from './Fee/Report/ConcessionReport'
+import DailyCollectionReport from './Fee/Report/DailyCollectionReport'
+import DailyDepositReport from './Fee/Report/DailyDepositReport'
+import FeeDefaulterReport from './Fee/Report/FeeDefaulterReport'
+import FeeReconciliationReport from './Fee/Report/FeeReconciliationReport'
+import FeeSubReconciliationReport from './Fee/Report/FeeSubReconciliationReport'
+import InstallmentWiseDefaulter from './Fee/Report/InstallmentWiseDefaulter'
+import LateFeeReport from './Fee/Report/LateFeeReport'
+import PaymentResponseReport from './Fee/Report/PaymentResponseReport'
+import StudentFeeSummary from './Fee/Report/StudentFeeSummary'
+
+
 
 
 
@@ -189,6 +212,32 @@ export default function PageRenderer({ moduleData, currentGroup, currentPage }) 
       if (pageId === 'FeeHeadMaster') return <FeeHeadMaster />
       if (pageId === 'FeeHeadChargeMaster') return <FeeHeadChargeMaster />
       if (pageId === 'DefineInstallment') return <DefineInstallment />
+      if (pageId === 'DefineLateFee') return <DefineLateFee />
+      if (pageId === 'DefineConcession') return <DefineConcession />
+      if (pageId === 'DefineConcessionGroup') return <DefineConcessionGroup />
+      if (pageId === 'DefineConcessionValue') return <DefineConcessionValue />
+
+
+
+
+
+      if (pageId === 'BudgetReport') return <BudgetReport />
+      if (pageId === 'ClasswiseFeeReport') return <ClasswiseFeeReport />
+      if (pageId === 'ConcessionGroupReport') return <ConcessionGroupReport />
+      if (pageId === 'ConcessionReport') return <ConcessionReport />
+      if (pageId === 'DailyCollectionReport') return <DailyCollectionReport />
+      if (pageId === 'DailyDepositReport') return <DailyDepositReport />
+      if (pageId === 'FeeDefaulterReport') return <FeeDefaulterReport />
+      if (pageId === 'FeeReconciliationReport') return <FeeReconciliationReport />
+      if (pageId === 'FeeSubReconciliationReport') return <FeeSubReconciliationReport />
+      if (pageId === 'InstallmentWiseDefaulter') return <InstallmentWiseDefaulter />
+      if (pageId === 'LateFeeReport') return <LateFeeReport />
+      if (pageId === 'PaymentResponseReport') return <PaymentResponseReport />
+      if (pageId === 'StudentFeeSummary') return <StudentFeeSummary />
+     
+
+
+
 
   return (
     <GenericPage
